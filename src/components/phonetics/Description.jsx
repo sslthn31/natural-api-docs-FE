@@ -1,13 +1,14 @@
 import React from 'react'
-import { Description, Title } from '../../style/StyledComponent';
+import { Description, Title, Url } from '../../style/StyledComponent';
 
 const PhoneticsDescription = () => {
   return (
     <>
       <Title>Phonetics</Title>
     <Description>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, voluptatibus possimus atque itaque unde nihil dicta numquam consequuntur tenetur dolorem magnam maxime doloribus hic adipisci magni perspiciatis ea quam quidem quas! Animi ipsam nihil autem! Iure esse delectus, velit ab aperiam quisquam nulla? Excepturi consequatur facere mollitia. Inventore nisi rerum nulla, deserunt sequi sed temporibus dolorum culpa aut, fugit deleniti.
+    Is representing the sounds and other phenomena of speech: such as. : constituting an alteration of ordinary spelling that better represents the spoken language, that employs only characters of the regular alphabet, and that is used in a context of conventional spelling <a href='https://www.merriam-webster.com/dictionary/phonetic#:~:text=adjective,a%20context%20of%20conventional%20spelling' target='_blank' rel="noreferrer">(Source)</a>
     </Description>
+    <Url>Endpoint :  https://natural-language-api.vercel.app/naturalApi/phonetics/<b>firstword</b>&<b>secondword</b></Url>
     </>
   )
 }

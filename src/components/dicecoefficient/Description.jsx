@@ -1,13 +1,14 @@
 import React from 'react'
-import { Description, Title } from '../../style/StyledComponent';
+import { Description, Title, Url } from '../../style/StyledComponent';
 
 const DiceCoefficientDescription = () => {
   return (
     <>
       <Title>Dice-Coefficient</Title>
     <Description>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, voluptatibus possimus atque itaque unde nihil dicta numquam consequuntur tenetur dolorem magnam maxime doloribus hic adipisci magni perspiciatis ea quam quidem quas! Animi ipsam nihil autem! Iure esse delectus, velit ab aperiam quisquam nulla? Excepturi consequatur facere mollitia. Inventore nisi rerum nulla, deserunt sequi sed temporibus dolorum culpa aut, fugit deleniti.
+      Is measures how similar a set and another set are. It can be used to measure how similar two strings are in terms of the number of common bigrams (a bigram is a pair of adjacent letters in the string). Below we give implementations of Dice's coefficient of two strings in different programming languages. <a href="https://en.wikibooks.org/wiki/Algorithm_Implementation/Strings/Dice%27s_coefficient" target="_blank" rel="noopener noreferrer">(Source)</a>
     </Description>
+    <Url>Endpoint :  https://natural-language-api.vercel.app/naturalApi/dicecoeffecient/<b>firstword</b>&<b>secondword</b></Url>
     </>
   )
 }

@@ -5,8 +5,9 @@ import PhoneticsForm from './Form'
 import PhoneticsResult from './Result'
 
 
+
 function Phonetics() {
-const url = 'https://natural-language-api.herokuapp.com/naturalApi/phonetics'
+const url = "https://natural-language-api.vercel.app/naturalApi/phonetics"
 const firstWordRef = React.useRef()
 const secondWordRef = React.useRef()
 const [result, setResult] = React.useState("");
@@ -20,8 +21,8 @@ function handlePhonetics(e) {
   .then((res) => {
   // console.log(res)
   setResult(res.data)
-  console.log(firstWord)
-  console.log(secondWord)
+  // console.log(firstWord)
+  // console.log(secondWord)
   // console.log(res)
   // setResult(res)
 }

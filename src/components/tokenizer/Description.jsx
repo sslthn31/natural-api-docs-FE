@@ -1,13 +1,14 @@
 import React from 'react'
-import { Description, Title } from '../../style/StyledComponent'
+import { Description, Title, Url } from '../../style/StyledComponent'
 
 const TokenizerDescription = () => {
   return (
     <>
       <Title>Tokenizer</Title>
     <Description>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, voluptatibus possimus atque itaque unde nihil dicta numquam consequuntur tenetur dolorem magnam maxime doloribus hic adipisci magni perspiciatis ea quam quidem quas! Animi ipsam nihil autem! Iure esse delectus, velit ab aperiam quisquam nulla? Excepturi consequatur facere mollitia. Inventore nisi rerum nulla, deserunt sequi sed temporibus dolorum culpa aut, fugit deleniti.
+    processing to split paragraphs and sentences into smaller units that can be more easily assigned meaning. The first step of the NLP process is gathering the data (a sentence) and breaking it into understandable parts (words) <a href="https://www.tokenex.com/blog/ab-what-is-nlp-natural-language-processing-tokenization/" target="_blank" rel="noopener noreferrer">(Source)</a>
     </Description>
+    <Url>Endpoint :  https://natural-language-api.vercel.app/naturalApi/tokenizer/<b>firstword</b></Url>
     </>
   )
 }

@@ -6,7 +6,7 @@ import TokenizerResult from './Result'
 
 
 function Tokenizer() {
-const url = 'https://natural-language-api.herokuapp.com/naturalApi/tokenizer'
+const url = 'https://natural-language-api.vercel.app/naturalApi/tokenizer'
 const firstWordRef = React.useRef()
 // const secondWordRef = React.useRef()
 const [result, setResult] = React.useState("");
@@ -20,14 +20,13 @@ function handleTokenizer(e) {
   .then((res) => {
   // console.log(res)
   setResult(res.data)
-  console.log(firstWord)
+  // console.log(firstWord)
 //   console.log(secondWord)
   // console.log(res)
   // setResult(res)
 }
 )
 .catch((err) => { 
-console.log(firstWord.length)
   console.log(err)})
 }
 return (

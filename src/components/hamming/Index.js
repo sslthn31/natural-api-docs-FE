@@ -6,7 +6,7 @@ import HammingForm from './Form'
 
 
 function Hamming() {
-const url = 'https://natural-language-api.herokuapp.com/naturalApi/hamming'
+const url = 'https://natural-language-api.vercel.app/naturalApi/hamming'
 const firstWordRef = React.useRef()
 const secondWordRef = React.useRef()
 const [result, setResult] = React.useState("");
@@ -20,8 +20,8 @@ function handleHamming(e) {
   .then((res) => {
   // console.log(res)
   setResult(res.data)
-  console.log(firstWord)
-  console.log(secondWord)
+  // console.log(firstWord)
+  // console.log(secondWord)
   // console.log(res)
   // setResult(res)
 }

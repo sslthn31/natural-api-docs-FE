@@ -5,7 +5,7 @@ import SingularForm from './Form'
 import SingularResult from './Result'
 
 function Singular() {
-const url = 'https://natural-language-api.herokuapp.com/naturalApi/singular'
+const url = 'https://natural-language-api.vercel.app/naturalApi/singular'
 const firstWordRef = React.useRef()
 // const secondWordRef = React.useRef()
 const [result, setResult] = React.useState("");
@@ -19,7 +19,7 @@ function handleSingular(e) {
   .then((res) => {
   // console.log(res)
   setResult(res.data)
-  console.log(firstWord)
+  // console.log(firstWord)
 //   console.log(secondWord)
   // console.log(res)
   // setResult(res)

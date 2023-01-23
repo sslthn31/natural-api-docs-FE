@@ -6,7 +6,7 @@ import DiceCoefficientResult from './Result'
 
 
 function DiceCoefficient() {
-const url = 'https://natural-language-api.herokuapp.com/naturalApi/DiceCoefficient'
+const url = 'https://natural-language-api.vercel.app/naturalApi/DiceCoefficient'
 const firstWordRef = React.useRef()
 const secondWordRef = React.useRef()
 const [result, setResult] = React.useState("");
@@ -20,8 +20,8 @@ function handleDiceCoefficient(e) {
   .then((res) => {
   // console.log(res)
   setResult(res.data)
-  console.log(firstWord)
-  console.log(secondWord)
+  // console.log(firstWord)
+  // console.log(secondWord)
   // console.log(res)
   // setResult(res)
 }

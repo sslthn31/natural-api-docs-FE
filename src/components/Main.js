@@ -91,7 +91,7 @@ const Main = () => {
       >
         <Sider theme="dark" collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
           <div className="logo" />
-          <Menu theme="dark" defaultSelectedKeys={[numToString]} mode="vertical">
+          <Menu theme="dark" defaultSelectedKeys={[numToString]} mode="vertical" className="test">
             {menuList.map((list) => {
               return(
             <Menu.Item className="side-item" key={list.key}>

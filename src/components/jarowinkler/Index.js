@@ -6,7 +6,7 @@ import JaroWinklerResult from './Result'
 
 
 function JaroWinkler() {
-const url = 'https://natural-language-api.herokuapp.com/naturalApi/jarowinkler'
+const url = 'https://natural-language-api.vercel.app/naturalApi/jarowinkler'
 const firstWordRef = React.useRef()
 const secondWordRef = React.useRef()
 const [result, setResult] = React.useState("");
@@ -20,8 +20,8 @@ function handleJaroWinkler(e) {
   .then((res) => {
   // console.log(res)
   setResult(res.data)
-  console.log(firstWord)
-  console.log(secondWord)
+  // console.log(firstWord)
+  // console.log(secondWord)
   // console.log(res)
   // setResult(res)
 }

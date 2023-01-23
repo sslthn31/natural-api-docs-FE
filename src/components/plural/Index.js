@@ -6,7 +6,7 @@ import PluralResult from './Result'
 
 
 function Plural() {
-const url = 'https://natural-language-api.herokuapp.com/naturalApi/plural'
+const url = 'https://natural-language-api.vercel.app/naturalApi/plural'
 const firstWordRef = React.useRef()
 // const secondWordRef = React.useRef()
 const [result, setResult] = React.useState("");
@@ -20,14 +20,13 @@ function handlePlural(e) {
   .then((res) => {
   // console.log(res)
   setResult(res.data)
-  console.log(firstWord)
+  // console.log(firstWord)
 //   console.log(secondWord)
   // console.log(res)
   // setResult(res)
 }
 )
 .catch((err) => { 
-console.log(firstWord.length)
   console.log(err)})
 }
 return (

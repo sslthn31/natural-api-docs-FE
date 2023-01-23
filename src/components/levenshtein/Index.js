@@ -6,7 +6,7 @@ import LevenshteinResult from './Result'
 
 
 function Levenshtein() {
-const url = 'https://natural-language-api.herokuapp.com/naturalApi/levenshtein'
+const url = 'https://natural-language-api.vercel.app/naturalApi/levenshtein'
 const firstWordRef = React.useRef()
 const secondWordRef = React.useRef()
 const [result, setResult] = React.useState("");
@@ -20,8 +20,8 @@ function handleLevenshtein(e) {
   .then((res) => {
   // console.log(res)
   setResult(res.data)
-  console.log(firstWord)
-  console.log(secondWord)
+  // console.log(firstWord)
+  // console.log(secondWord)
   // console.log(res)
   // setResult(res)
 }
